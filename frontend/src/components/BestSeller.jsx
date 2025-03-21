@@ -6,7 +6,8 @@ const BestSeller = () => {
   const {products}=useContext(ShopContext);
   const [bestSeller,setBestSeller]=useState([]);
   useEffect(()=>{
-   const bestProducts=products.filter((item)=>(!(item.bestSeller)));
+   const bestProducts=products.filter((item)=>((item.bestSeller)));
+    
     setBestSeller(bestProducts.slice(0,5));
   },[products])
 
