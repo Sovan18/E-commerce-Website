@@ -29,7 +29,7 @@ const Verify = () => {
            console.log(error);
             toast.error(error.message)
         }
-    }
+    };
     useEffect(()=>{
      verifyPayment()
     },[token])
